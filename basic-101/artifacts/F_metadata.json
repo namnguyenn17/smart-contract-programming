@@ -32,7 +32,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"basic-101/Inheritance.sol": "B"
+			"basic-101/Inheritance.sol": "F"
 		},
 		"evmVersion": "london",
 		"libraries": {},

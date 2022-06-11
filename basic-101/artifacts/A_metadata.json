@@ -6,16 +6,23 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"name": "foo",
-				"outputs": [
+				"anonymous": false,
+				"inputs": [
 					{
+						"indexed": false,
 						"internalType": "string",
-						"name": "",
+						"name": "message",
 						"type": "string"
 					}
 				],
-				"stateMutability": "pure",
+				"name": "Log",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "foo",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -32,7 +39,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"basic-101/Inheritance.sol": "B"
+			"basic-101/CallingParents.sol": "A"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -46,12 +53,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"basic-101/Inheritance.sol": {
-			"keccak256": "0xc80d7d4902bd03fbc05eb5c2ee657565a7f5ff676da38470928a32c9f4993c19",
+		"basic-101/CallingParents.sol": {
+			"keccak256": "0xba52edff25c5c88c6eda2fe545bf1db944f1dc59e2f5d5d230d7cecffb2a0035",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d26556352f384d653e9bcf2bcb1ab9519aad6ff035f49ffd1dc77155c1d8e8f5",
-				"dweb:/ipfs/QmUnZ2Q9ZJs3qfWjC9w6rVL1Pg5SMWYZfwjeWpMUD2CUUL"
+				"bzz-raw://b82e41e1663aab2427dab4da495422f542f042b38698ed21c987bae0c9ae931a",
+				"dweb:/ipfs/QmR9YAyRrQJRFwcXyYuhTugD4LGEpNya1ouJ6mmrAmshyS"
 			]
 		}
 	},
