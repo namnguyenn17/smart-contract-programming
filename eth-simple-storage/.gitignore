@@ -1,5 +1,4 @@
 node_modules
 .env
-.encryptedJsonKey
-SimpleStorage_sol*\*
 .encryptedKey.json
+SimpleStorage_sol_*
