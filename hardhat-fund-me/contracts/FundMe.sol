@@ -42,13 +42,14 @@ contract FundMe {
     //// internal
     //// private
     //// view / pure
-    constructor() {
+    constructor(address priceFeedAddress) {
         i_owner = msg.sender;
+        s_priceFeed = AggregatorV3Interface(priceFeedAddress);
     }
 
     function fund() public payable {
         require(
-            msg.value.getConvertionPrice() >= MINIMUM_USD,
+            msg.value.getConversionRate(s_priceFeed) >= MINIMUM_USD,
             "Minimum USD amount is 50"
         );
         s_addressesToAmountFunded[msg.sender] += msg.value;
